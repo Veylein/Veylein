@@ -11,8 +11,8 @@ body, html {
   background: url('https://media.discordapp.net/attachments/1405243351720136724/1440129819760394320/Screenshot_2025-11-10_163200.png?ex=691d08e9&is=691bb769&hm=45b67b03121584789534a155bc67a7b545d5e6860609c2921ac555e3e29acb78&=&format=webp&quality=lossless') no-repeat center center fixed;
   background-size: cover;
   position: fixed;
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -31,7 +31,7 @@ body, html {
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 20px;
-  color: #fff;
+  color: #000000;
   flex: 1 1 300px; /* min width 300px, flex-grow */
   max-width: 500px;
   box-sizing: border-box;
