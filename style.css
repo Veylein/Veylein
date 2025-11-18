@@ -8,11 +8,11 @@ body, html {
 
 /* Background */
 .background {
-  background: url('https://media.discordapp.net/attachments/1416204063606964405/1440100803397288159/Screenshot_2025-11-10_163336.png?ex=691cede3&is=691b9c63&hm=0d6461b2d6c878978193749ed1e3116ca27b090f5c9e853066c353997ba6e610&=&format=webp&quality=lossless') no-repeat center center fixed;
+  background: url('https://media.discordapp.net/attachments/1405243351720136724/1440129819760394320/Screenshot_2025-11-10_163200.png?ex=691d08e9&is=691bb769&hm=45b67b03121584789534a155bc67a7b545d5e6860609c2921ac555e3e29acb78&=&format=webp&quality=lossless') no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 95%;
   z-index: -1;
 }
 
@@ -53,7 +53,7 @@ body, html {
   display: block;
   margin: 10px auto;
   padding: 10px 20px;
-  background: linear-gradient(90deg, #d2691e, #ff4500, #ffb347);
+  background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00);
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
