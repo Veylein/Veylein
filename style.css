@@ -1,22 +1,27 @@
 /* Reset */
-body, html {
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background: #000;
   color: #fff;
   overflow-x: hidden;
+  height: 100%;
 }
 
 /* Neon gradient animated bg blur */
 .background {
-  width: 100%;
-  height: 100%;
   position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
-  background: radial-gradient(circle at 20% 20%, #ff0080, transparent),
-              radial-gradient(circle at 80% 80%, #00eaff, transparent),
-              radial-gradient(circle at 50% 50%, #7a00ff, transparent);
+
+  background:
+    radial-gradient(circle at 20% 20%, #ff0080 20%, transparent 60%),
+    radial-gradient(circle at 80% 80%, #00eaff 20%, transparent 60%),
+    radial-gradient(circle at 50% 50%, #7a00ff 20%, transparent 60%);
+
   filter: blur(120px);
   animation: pulse 12s infinite alternate;
 }
