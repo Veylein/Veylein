@@ -7,39 +7,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background"></div>
-  
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Psyvrse</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#bots">Bots</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </nav>
+
+  <!-- Background particles -->
+  <canvas id="particles"></canvas>
+
   <div class="container">
-
-    <!-- Left Card -->
+    <!-- Profile Card -->
     <div class="card profile-card glass">
-      <img src="https://media.discordapp.net/attachments/1441089574255460363/1441428427424137398/a3f4c389e17a4292496d2cf278f7271a.webp?ex=6921c255&is=692070d5&hm=3fd94bfe3429f4beef65a2f98cccf4936fabb48efdd7c87cd69139eb9982e9aa&=&format=webp&width=706&height=706" class="profile-img">
+      <img src="https://media.discordapp.net/attachments/1441089574255460363/1441428427424137398/a3f4c389e17a4292496d2cf278f7271a.webp" class="profile-img">
+      <h1 class="name" id="typewriter"></h1>
 
-      <h1 class="name">Veylein</h1>
-
-      <div class="links">
-        <a href="https://discord.com/users/1382187068373074001"><img src="https://e1.pngegg.com/pngimages/373/977/png-clipart-discord-for-macos-white-and-blue-logo-art.png">Discord Profile</a>
-        <a href="https://discord.gg/VB6aSKvq65">Psyvrse Server</a>
+      <div class="links" id="links">
+        <a href="https://discord.com/users/1382187068373074001"><img src="https://e1.pngegg.com/pngimages/373/977/png-clipart-discord-for-macos-white-and-blue-logo-art.png">Discord</a>
+        <a href="https://discord.gg/VB6aSKvq65"><img src="https://media.discordapp.net/attachments/1416204063606964405/1440820917281230929/Screenshot_2025-11-19_163224.png">Psyvrse Server</a>
         <a href="https://discord.gg/pandian"><img src="https://cdn-gx-aria-media.osp.opera.software/public/generated_images/9374f195-c59a-11f0-a3c2-c908a1098b5b/4759cbea.png">Bamboo Forest</a>
-        <a href="https://www.youtube.com/@veylein">YouTube</a>
+        <a href="https://www.youtube.com/@veylein"><img src="https://media.discordapp.net/attachments/1405243351720136724/1440828040732086483/image_2025-11-19_171315325-removebg-preview.png">YouTube</a>
         <a href="https://discord.com/discovery/applications/1438766171338838048"><img src="https://i.etsystatic.com/35308167/r/il/ee1b5b/3806884454/il_1080xN.3806884454_bss8.jpg">Ludus Bot</a>
         <a href="https://discord.com/discovery/applications/1426070822682103859"><img src="https://i.etsystatic.com/35308167/r/il/ee1b5b/3806884454/il_1080xN.3806884454_bss8.jpg">Pax Bot</a>
-        <a href="mailto:bambooforestowner@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png">Email Me</a>
+        <a href="mailto:bambooforestowner@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg">Email</a>
         <a href="https://open.spotify.com/user/31qixvs54dzjme33r6jtkzakd5cq"><img src="https://cdn-gx-aria-media.osp.opera.software/public/generated_images/9374f195-c59a-11f0-a3c2-c908a1098b5b/b07d2b81.png">Spotify</a>
         <a href="https://github.com/Veylein"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png">GitHub</a>
         <a href="https://www.roblox.com/users/1148287402/profile"><img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/f/7/c/f7c9f2a9f31bf5748c52fa1087126828a5333ac8.png">Roblox</a>
-        <a href="https://namemc.com/profile/Veylein.1"><img src="https://preview.redd.it/i-improved-the-minecraft-launcher-icon-v0-qms9mgmqdyob1.png?width=1024&format=png&auto=webp&s=47ae7f53a23bbed0fef86fba6916b67deec46943">Minecraft User</a>
+        <a href="https://namemc.com/profile/Veylein.1"><img src="https://preview.redd.it/i-improved-the-minecraft-launcher-icon-v0-qms9mgmqdyob1.png">Minecraft</a>
       </div>
     </div>
 
-    <!-- Right Card -->
-    <div class="card description-card glass">
+    <!-- Description Card -->
+    <div class="card description-card glass" id="about">
       <h2>⚙️ Who Am I?</h2>
-      <p>I’m Psy — a multi-talented creator building the future one bot, beat, and idea at a time. Creativity isn’t a hobby… it’s the lifestyle. 🔥</p>
+      <p>I’m Psy — a multi-talented creator building the future one bot, beat, and idea at a time. Creativity isn’t a hobby… it’s a lifestyle. 🔥</p>
 
       <h2>🤖 What I Do</h2>
-      <p>I run bot networks like <strong>Ludus</strong>, <strong>Pax</strong>, <strong>Vilicous</strong>, and the upcoming <strong>Conditor</strong>.  
-      My mission: inspire devs, gamers, and creatives to think bigger with the power of AI. 🚀</p>
+      <p>I run bot networks like <strong>Ludus</strong>, <strong>Pax</strong>, <strong>Vilicous</strong>, and <strong>Conditor</strong>.  
+      My mission: inspire devs, gamers, and creatives to think bigger with AI. 🚀</p>
 
       <h2>❤️ What I Love</h2>
       <ul>
@@ -53,9 +67,15 @@
       </ul>
 
       <h2>💢 What I Hate</h2>
-      <p>Hypocrites, greed, fake people — if you're not my friend you can fuck off 😭🖕</p>
+      <p>Hypocrites, greed, fake people — if you're not my friend, you can fuck off 😭🖕</p>
     </div>
-
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Psyvrse Devs. Build. Break. Become.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
