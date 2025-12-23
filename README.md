@@ -1,6 +1,6 @@
 ### ⚙️ **Who Am I:**
 
-I’m Psy — a multi-talented creator building the future one bot, beat, and idea at a time. From Discord automation to digital art to music, I push boundaries on and off the board. Creativity isn’t a hobby for me… it’s the lifestyle. 🔥
+I’m Veylein — a multi-talented creator building the future one bot, beat, and idea at a time. From Discord automation to digital art to music, I push boundaries on and off the board. Creativity isn’t a hobby for me… it’s the lifestyle. 🔥
 
 ---
 
