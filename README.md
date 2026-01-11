@@ -1,33 +1,35 @@
-### ⚙️ **Who Am I:**
 
-I’m Veylein — a multi-talented creator building the future one bot, beat, and idea at a time. From Discord automation to digital art to music, I push boundaries on and off the board. Creativity isn’t a hobby for me… it’s the lifestyle. 🔥
+⚡ Who I Am:
 
----
+I’m Veylein — chaotic coder, creative instigator, and all-around builder of weird, wild worlds. From bots to mods to music, I don’t just make things… I make everything a little more interesting. Life’s too short to play safe, so I break rules, bend games, and leave a trail of confusion wherever I go. 😎🔥
 
-### 🤖 **What I Do:**
+⸻
 
-I design and run multi-bot networks like **Ludus**, **Pax**, **Vilicous**, and the upcoming **Conditor** — each one crafted to evolve Discord automation, robotics, and user experience.
-My mission? To inspire devs, gamers, and creatives to think bigger with the power of AI. 🚀
+💻 What I Build:
+	•	Discord bots & automation (Ludus, Pax, Vilicous, soon: Conditor)
+	•	Minecraft mods, plugins, resource packs & a fully hosted server
+	•	Roblox games & Among Us mods
+	•	Websites, templates, and tools for creators everywhere
 
----
+Everything I make is public — no secrets, no gatekeeping. Need help? Hit me up at Psyvrse@gmail.com.
 
-### ❤️ **What I Love:**
+⸻
 
-* Coding & building with AI 🤝
-* Hanging with friends 🫂
-* Animals (they’re better than people) 🐾
-* Video games 🎮
-* Creating art & music 🎨🎧
-* Autumn & winter — peak aesthetic 🍂❄️
-* Just… living life lol 😭✨
+🎨 What I Love:
+	•	Creating & coding with AI 🤖
+	•	Games, music, art, and chaos 🎮🎧🎨
+	•	Animals 🐾 (better than most humans)
+	•	Autumn & winter aesthetics 🍂❄️
+	•	Friends, fun, and random mischief 🫂✨
 
----
+⸻
 
-### 💢 **What I Don’t:**
+🖤 What I Don’t:
 
-Egos, hypocrites, greed, fake people — basically anyone who isn’t a friend can stay 20 ft away 😭🖕
+Egos, fake people, greed, and rules that make no sense. Basically… stay 20 ft away if you’re not cool. 😭🖕
 
-### **What is this:**
+⸻
 
-This is my about me included with my links to my success and failures. 
-UwU
+🌈 Extra Chaos Info:
+
+Bisexual, constantly leveling up IRL, and always looking for a reason to push boundaries.
