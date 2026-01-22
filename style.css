@@ -1,258 +1,137 @@
-/* =========================
-   ROOT & RESET
-========================= */
 :root {
   --glass-bg: rgba(255,255,255,0.05);
   --glass-border: rgba(255,255,255,0.18);
-  --neon-cyan: #00fff0;
-  --neon-pink: #ff00ff;
-  --neon-soft: #ff77ff;
+  --gradient-start: #00fff0;
+  --gradient-end: #ff00ff;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-}
-
-html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   background: #0a0a0a;
   color: #fff;
   overflow-x: hidden;
 }
 
-/* =========================
-   BACKGROUND
-========================= */
-.background {
+canvas#gradient-bg {
   position: fixed;
   inset: 0;
-  z-index: -1;
-  background:
-    url('https://img.freepik.com/premium-photo/midnight-sapphire-celestial-dreamscape-magenta-aquamarine-ultrawide-background-wallpaper_891336-68839.jpg')
-    center / cover no-repeat;
-  filter: brightness(1) saturate(1.2);
-  will-change: transform;
+  z-index: -2;
 }
 
-/* =========================
-   CONTAINER
-========================= */
 .container {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 50px 20px;
   justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
 }
 
-/* =========================
-   CARDS (GLASSMORPHIC VIP)
-========================= */
 .card {
   flex: 1 1 320px;
   max-width: 520px;
   padding: 30px;
   border-radius: 24px;
-
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-
   backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
-
   box-shadow: 0 10px 40px rgba(0,0,0,0.55);
-  font-weight: 600;
-
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
-
-  will-change: transform;
+  transition: 0.35s ease;
 }
 
 .card:hover {
   transform: translateY(-10px);
   border-color: rgba(255,0,255,0.4);
-  box-shadow:
-    0 20px 55px rgba(255,0,255,0.35),
-    0 12px 45px rgba(0,255,255,0.3);
+  box-shadow: 0 20px 55px rgba(255,0,255,0.35), 0 12px 45px rgba(0,255,255,0.3);
 }
 
-/* =========================
-   PROFILE IMAGE
-========================= */
 .profile-img {
   width: 160px;
-  aspect-ratio: 1;
   border-radius: 50%;
-  object-fit: cover;
+  display: block;
   margin: 0 auto 22px;
-
   border: 4px solid rgba(0,255,255,0.7);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-img:hover {
   transform: scale(1.07) rotate(2deg);
-  box-shadow:
-    0 0 22px var(--neon-pink),
-    0 0 32px var(--neon-cyan);
+  box-shadow: 0 0 22px var(--gradient-start), 0 0 32px var(--gradient-end);
 }
 
-/* =========================
-   LINKS / BUTTONS
-========================= */
 .links {
   display: grid;
   gap: 14px;
-  margin-top: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
 }
 
 .links a {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-
+  justify-content: center;
   padding: 12px 16px;
   border-radius: 14px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(0,255,255,0.15),
-    rgba(255,0,255,0.15)
-  );
-
+  background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.15);
   color: inherit;
   font-weight: 500;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  will-change: transform;
+  transition: 0.3s ease;
 }
 
 .links a:hover {
   transform: scale(1.06);
-  background: linear-gradient(
-    135deg,
-    rgba(0,255,255,0.28),
-    rgba(255,0,255,0.28)
-  );
-  box-shadow:
-    0 0 14px var(--neon-cyan),
-    0 0 22px var(--neon-pink);
+  box-shadow: 0 0 14px var(--gradient-start), 0 0 22px var(--gradient-end);
 }
 
 .links img {
   width: 32px;
-  aspect-ratio: 1;
   border-radius: 6px;
 }
 
-/* =========================
-   HEADINGS & TEXT
-========================= */
-.description-card h2,
-.projects-card h2 {
-  margin-top: 0;
-  font-family: 'Roboto Mono', monospace;
-  color: var(--neon-soft);
-  text-shadow:
-    0 0 12px var(--neon-cyan),
-    0 0 22px var(--neon-pink);
-}
-
-.description-card p,
-.description-card ul {
-  margin-top: 12px;
-  line-height: 1.7;
-}
-
-.description-card ul {
-  padding-left: 22px;
-}
-
-.description-card li {
-  margin-bottom: 0.75rem;
-}
-
-/* =========================
-   PROJECT LIST
-========================= */
-.projects-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.projects-card li {
-  padding: 12px 18px;
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--gradient-start);
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 12px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button#changeGradient {
+  padding: 10px 18px;
+  margin-top: 12px;
   border-radius: 12px;
-  background: rgba(255,0,255,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  border: none;
+  color: #0a0a0a;
+  transition: 0.3s ease;
 }
 
-.projects-card li:hover {
-  transform: translateX(6px);
-  background: rgba(0,255,255,0.15);
-  box-shadow:
-    0 0 16px var(--neon-cyan),
-    0 0 22px var(--neon-pink);
+button#changeGradient:hover {
+  transform: scale(1.05);
 }
 
-/* =========================
-   FALLING COSMIC EMOJIS
-========================= */
-.leaves {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.leaf {
-  position: absolute;
-  top: -50px;
-  font-size: clamp(1.4rem, 2vw, 2.4rem);
-  opacity: 0.85;
-  animation: fall linear infinite;
-  will-change: transform;
-}
-
-.leaf:nth-child(1) { left: 5%;  animation-duration: 12s; }
-.leaf:nth-child(2) { left: 20%; animation-duration: 15s; }
-.leaf:nth-child(3) { left: 35%; animation-duration: 10s; }
-.leaf:nth-child(4) { left: 50%; animation-duration: 16s; }
-.leaf:nth-child(5) { left: 65%; animation-duration: 13s; }
-.leaf:nth-child(6) { left: 80%; animation-duration: 11s; }
-
-@keyframes fall {
-  to {
-    transform: translate(25px, 110vh) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
+/* Responsive */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
-
   .links {
     grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
   }
