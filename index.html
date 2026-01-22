@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veylein</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <title>Veylein — Creator & Dev</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Background -->
-  <div class="background"></div>
+  <!-- Dynamic Background -->
+  <canvas id="gradient-bg"></canvas>
 
   <!-- Main Container -->
   <main class="container">
@@ -21,89 +23,52 @@
            alt="Veylein" class="profile-img">
       <h1>Veylein</h1>
       <div class="links">
-        <a href="https://discord.com/users/1382187068373074001">
-          <img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord"> Discord
-        </a>
-        <a href="https://discord.com/discovery/applications/1449497407028068443">
-          <img src="https://media.discordapp.net/attachments/1449844498342346852/1452915973584715928/image_2025-12-23_014738227-removebg-preview.png" alt="Villicus"> Villicus
-        </a>
-        <a href="https://discord.com/oauth2/authorize?client_id=1448901193828139131">
-          <img src="https://media.discordapp.net/attachments/1449844498342346852/1452915973584715928/image_2025-12-23_014738227-removebg-preview.png" alt="Pax"> Pax
-        </a>
-        <a href="mailto:bambooforestowner@gmail.com">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="Email"> Email
-        </a>
-        <a href="https://www.roblox.com/users/1148287402/profile">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt="Roblox"> Roblox
-        </a>
-        <a href="https://namemc.com/profile/Veylein.1">
-          <img src="https://brandlogos.net/wp-content/uploads/2022/07/minecraft-logo_brandlogos.net_faqdi-512x560.png" alt="Minecraft"> Minecraft
-        </a>
-        <a href="https://www.instagram.com/veyl.ein">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram"> Instagram
-        </a>
-        <a href="https://bsky.app/profile/veylein.bsky.social">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/1200px-Bluesky_Logo.svg.png" alt="Bluesky"> Bluesky
-        </a>
-        <a href="https://x.com/Veylein">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="X/Twitter"> X
-        </a>
-        <a href="https://www.youtube.com/@veylein">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"> YouTube
-        </a>
-        <a href="https://github.com/Veylein">
-          <img src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-1-logo-black-and-white.png" alt="GitHub"> GitHub
-        </a>
-        <a href="https://discord.com/invite/psyvrse">
-          <img src="https://yt3.googleusercontent.com/d-hebF0Ca1yMtm_ytmqIsxRbIQbllW09Fz-hxKwF2HH1aigQG6S3EG9MQ_VLxGzrDbOj_V8KVw=s900-c-k-c0x00ffffff-no-rj" alt="Psyvrse"> Psyvrse
-        </a>
+        <a href="https://discord.com/users/1382187068373074001"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord"> Discord</a>
+        <a href="https://www.roblox.com/users/1148287402/profile"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt="Roblox"> Roblox</a>
+        <a href="mailto:bambooforestowner@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="Email"> Email</a>
+        <a href="https://github.com/Veylein"><img src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-1-logo-black-and-white.png" alt="GitHub"> GitHub</a>
+        <a href="https://www.instagram.com/veyl.ein"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram"> Instagram</a>
       </div>
     </section>
 
-    <!-- Description Card -->
-    <section class="card description-card">
-      <h2>⚙️ Who Am I?</h2>
-      <p>I’m Veylein — a multi-talented creator building the future one bot, game, and idea at a time. From Discord automation to digital art to music, I push boundaries on and off the board. Creativity isn’t a hobby… it’s my lifestyle. 🔥</p>
+    <!-- About Me Card -->
+    <section class="card about-card">
+      <h2>⚡ About Me</h2>
+      <p class="gradient-text">
+        I’m <strong>Veylein</strong> — a creator, coder, and chaos enthusiast. From crafting advanced Discord bots to experimenting with AI art, music, and immersive experiences, I blend creativity with technology. Every project is a playground, every idea a spark. I build, I design, I push boundaries. This isn’t a hobby — it’s a lifestyle. 🌌
+      </p>
 
-      <h2>🤖 What I Do</h2>
-      <p>I design and run multi-bot networks like <strong>Ludus</strong>, <strong>Pax</strong>, <strong>Villicus</strong>, and the upcoming <strong>Conditor</strong> — each crafted to evolve Discord automation, robotics, and user experience. <br>
-      My mission? To inspire devs, gamers, and creatives to think bigger with the power of AI. 🚀</p>
+      <h2>💡 What I Create</h2>
+      <p class="gradient-text">
+        Discord bots like <strong>Ludus</strong>, <strong>Pax</strong>, and <strong>Villicus</strong> — leveling up gaming, automation, and community interaction. I also craft art, music, and digital experiences that make people pause, think, and smile. 🚀
+      </p>
 
-      <h2>❤️ What I Love</h2>
+      <h2>❤️ What Drives Me</h2>
       <ul>
-        <li>Coding & building with AI 🤝</li>
-        <li>Hanging with friends 🫂</li>
-        <li>Animals 🐾</li>
-        <li>Video games 🎮</li>
-        <li>Creating art & music 🎨🎧</li>
-        <li>Autumn & winter — peak aesthetic 🍂❄️</li>
-        <li>Chaos and Confusion 🥀</li>
+        <li>Coding with AI & making life easier through tech 🤖</li>
+        <li>Video games & immersive worlds 🎮</li>
+        <li>Art, music, and design 🎨🎧</li>
+        <li>Autumn & winter vibes 🍂❄️</li>
+        <li>Chaos, confusion, and creativity 🔥</li>
       </ul>
+
+      <button id="changeGradient">🎨 Change Gradient</button>
     </section>
 
     <!-- Projects Card -->
     <section class="card projects-card">
-      <h2>🏆 Projects & Achievements</h2>
+      <h2>🏆 Projects</h2>
       <ul>
-        <li><strong>𝑳𝒖𝒅𝒖𝒔 🎮:</strong> Ultimate minigame bot with 750+ features, 250 minigames, and 25 simulation games.</li>
-        <li><strong>𝑷𝒂𝒙 🧌:</strong> Ultimate RPG Discord bot with dueling, farming, weapons, and community events.</li>
-        <li><strong>𝙑𝙞𝙡𝙡𝙞𝙘𝙪𝙨 ⚖️:</strong> Next-level moderation bot with context-aware automoderation and analytics.</li>
-        <li><strong>𝙋𝙨𝙮𝙫𝙧𝙨𝙚 🔨:</strong> My own dev company for all my Discord bots 🌌</li>
-        <li><strong>𝙇𝙚𝙖𝙧𝙣𝙞𝙣𝙜 𝙇𝙖𝙩𝙞𝙣 📃:</strong> Ancient wisdom meets modern tech 📜</li>
+        <li><strong>Ludus 🎮:</strong> 750+ features, 250 minigames, 25 simulations.</li>
+        <li><strong>Pax 🧌:</strong> RPG Discord bot with dueling, farming, and community events.</li>
+        <li><strong>Villicus ⚖️:</strong> Context-aware moderation bot with analytics.</li>
+        <li><strong>Psyvrse 🔨:</strong> My dev company for Discord innovations.</li>
+        <li><strong>Learning Latin 📜:</strong> Ancient wisdom meets modern tech.</li>
       </ul>
     </section>
 
   </main>
 
-  <!-- Falling Cosmic Emojis -->
-  <div class="leaves">
-    <div class="leaf">🪐</div>
-    <div class="leaf">⭐</div>
-    <div class="leaf">☄️</div>
-    <div class="leaf">🪐</div>
-    <div class="leaf">⭐</div>
-    <div class="leaf">☄️</div>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
