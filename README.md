@@ -1,9 +1,27 @@
-# Hi there, I’m Veylein 🌸💻
+## Veylein | Chaotic Wonderland
 
-I’m a nature-loving, tech-breaking teen with a love for chaos and a mild obsession with AI (I currently have 4 personal AIs keeping me company—don’t judge 😎). I code Discord bots, dabble in Lua, discord.py, TypeScript, and I’m leveling up in HTML, CSS, Python, JS, and JSON—basically, if it’s digital, I’m probably poking at it.
+Interactive GitHub Pages–ready site with:
+- Click-to-enter glitch entrance
+- About section with playful pastel/glitch aesthetic
+- Hidden easter-egg button that opens a mini canvas shooter
+- Shooter: move (WASD/Arrows), shoot (Space), power-ups (Mulan Sword arc, AI Laser pierce), score + localStorage high score
 
-When I’m not coding, I run a bounty service in a Roblox game (because someone has to keep things interesting 😏), train for the military, and big fan over all things Disney—Mulan forever 💖. My favorite movie is also *Mulan*, and I will fight anyone who tries to tell me *Colors of the Wind* isn’t a masterpiece.
+### Structure
+- `index.html` — main page
+- `css/style.css` — styling
+- `js/main.js` — entrance + interactions
+- `js/game.js` — mini shooter
+- `assets/` — drop your own images/sounds (optional)
 
-I have a soft spot for swords, guns, red pandas, sea lions, and basically every other cute or deadly animal you can imagine. Humans… eh, they’re okay, I guess.
+### Run locally
+Open `index.html` in a browser (no build step).
 
-Here, expect a little tech, a little chaos, a lot of curiosity, and maybe a sprinkle of pink just to mess with your expectations 🌷✨.
+### Deploy to GitHub Pages
+1. Push this repo.
+2. In GitHub, Settings → Pages → Deploy from branch → `main` (or your branch), `/ (root)`.
+3. Save — GitHub Pages will serve `index.html`.
+
+### Customizing
+- Update About content in `index.html`.
+- Tweak colors in `css/style.css` (`--accent` etc.).
+- Game tuning in `js/game.js` (speeds, spawn timing, power-ups).
