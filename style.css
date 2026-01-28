@@ -29,6 +29,36 @@ html, body {
   filter: brightness(0.85) saturate(1.2);
 }
 
+/* Top Nav */
+.top-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(20,0,30,0.7));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  z-index: 2;
+}
+.brand { font-family: 'Orbitron', sans-serif; font-size: 1.3rem; letter-spacing: 1px; }
+.brand span { color: var(--neon-pink); }
+.top-nav nav { display: flex; gap: 14px; }
+.top-nav a {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+.top-nav a:hover {
+  background: rgba(255,0,255,0.18);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /* Container */
 .container {
   display: flex;
@@ -138,6 +168,47 @@ h1 { font-family: 'Orbitron', sans-serif; text-align: center; }
   background: rgba(0,255,255,0.15);
   box-shadow: 0 0 16px var(--neon-cyan), 0 0 22px var(--neon-pink);
 }
+
+/* Discord Realm */
+.discord-card {
+  border: 1px solid rgba(114,137,218,0.5);
+  box-shadow: 0 20px 40px rgba(114,137,218,0.25);
+}
+.discord-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(114,137,218,0.25), rgba(88,101,242,0.35));
+  margin-bottom: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.discord-bar img { width: 44px; }
+.discord-title { display: flex; flex-direction: column; font-family: 'Orbitron', sans-serif; }
+.discord-title small { font-family: 'Roboto', sans-serif; color: #dcdcff; }
+.discord-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.discord-pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(88,101,242,0.28);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.discord-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(114,137,218,0.5);
+  box-shadow: 0 8px 24px rgba(114,137,218,0.35);
+}
+.discord-copy { margin-top: 4px; color: #f4f2ff; line-height: 1.6; }
 
 /* Falling emojis */
 .leaf { position:absolute; top:-50px; font-size:clamp(1.4rem, 2vw, 2.4rem); opacity:0.85; animation: fall linear infinite; }
