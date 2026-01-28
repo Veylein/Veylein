@@ -3,73 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veylein | Creator & Dev</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Veylein | Chaotic Wonderland</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Cinematic Background -->
-  <div class="background"></div>
+  <!-- Entrance Overlay -->
+  <div id="entrance" class="entrance">
+    <div class="entrance-glow"></div>
+    <div class="entrance-content">
+      <p class="glitch" data-text="CLICK TO ENTER">CLICK TO ENTER</p>
+      <small>Chaos awaits. Tap anywhere.</small>
+    </div>
+  </div>
 
-  <main class="container">
+  <div class="background-noise"></div>
+  <div class="pastel-blobs">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
 
-    <!-- PROFILE CARD -->
-    <section class="card profile-card">
-      <img src="https://images-ext-1.discordapp.net/external/XnAfIvpkABUhLFAx7r2r1qtuUr-yPfa_9MZ9qax9Ing/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/1382187068373074001/79f22824dd5de7a21634cd509480606a.png?format=webp&quality=lossless&width=300&height=300" 
-           alt="Veylein" class="profile-img">
-      <h1>Veylein</h1>
-      <p class="subtitle">Discord Maestro | AI Creator | Chaos Enthusiast</p>
+  <!-- Main Wrapper -->
+  <main id="main" class="hidden">
+    <header class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">chaotic · glitchy · slightly girly</p>
+        <h1>Veylein — bot alchemist & animal appreciator</h1>
+        <p class="lede">Discord bots in Lua, discord.py, TypeScript. Learning HTML, CSS, Python, JS, and JSON. Runs a bounty service in Roblox, trains for the military, and vibes with Disney’s <strong>Mulan</strong>. Favorite song: <em>Colors of the Wind</em>.</p>
+        <div class="pill-row">
+          <span class="pill">swords & guns</span>
+          <span class="pill">red pandas</span>
+          <span class="pill">sea lions</span>
+          <span class="pill">humans are ok</span>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="pfp-ring">
+          <div class="pfp-glow"></div>
+          <img src="https://cdn.discordapp.com/avatars/1382187068373074001/79f22824dd5de7a21634cd509480606a.png?size=512" alt="Veylein avatar">
+        </div>
+        <div class="statline">
+          <span>discord alchemy</span>
+          <span>roblox bounty runner</span>
+          <span>disney enjoyer</span>
+        </div>
+        <div class="buttons">
+          <a class="btn" href="https://discord.com/users/1382187068373074001" target="_blank" rel="noreferrer">Discord</a>
+          <a class="btn ghost" href="https://github.com/Veylein" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </header>
 
-      <div class="links">
-        <a href="https://discord.com/users/1382187068373074001"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord"> Discord</a>
-        <a href="https://discord.com/discovery/applications/1449497407028068443"><img src="https://media.discordapp.net/attachments/1449844498342346852/1452915973584715928/image_2025-12-23_014738227-removebg-preview.png" alt="Villicus"> Villicus</a>
-        <a href="https://discord.com/oauth2/authorize?client_id=1448901193828139131"><img src="https://media.discordapp.net/attachments/1449844498342346852/1452915973584715928/image_2025-12-23_014738227-removebg-preview.png" alt="Pax"> Pax</a>
-        <a href="mailto:bambooforestowner@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="Email"> Email</a>
-        <a href="https://www.roblox.com/users/1148287402/profile"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.jpg" alt="Roblox"> Roblox</a>
-        <a href="https://namemc.com/profile/Veylein.1"><img src="https://brandlogos.net/wp-content/uploads/2022/07/minecraft-logo_brandlogos.net_faqdi-512x560.png" alt="Minecraft"> Minecraft</a>
-        <a href="https://www.instagram.com/veyl.ein"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram"> Instagram</a>
-        <a href="https://bsky.app/profile/veylein.bsky.social"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/1200px-Bluesky_Logo.svg.png" alt="Bluesky"> Bluesky</a>
-        <a href="https://x.com/Veylein"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="X/Twitter"> X</a>
-        <a href="https://www.youtube.com/@veylein"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"> YouTube</a>
-        <a href="https://github.com/Veylein"><img src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-1-logo-black-and-white.png" alt="GitHub"> GitHub</a>
-        <a href="https://discord.com/invite/psyvrse"><img src="https://yt3.googleusercontent.com/d-hebF0Ca1yMtm_ytmqIsxRbIQbllW09Fz-hxKwF2HH1aigQG6S3EG9MQ_VLxGzrDbOj_V8KVw=s900-c-k-c0x00ffffff-no-rj" alt="Psyvrse"> Psyvrse</a>
+    <section class="about">
+      <div class="about__col">
+        <h2>About Me</h2>
+        <p>I build chaotic, playful things — from multi-bot Discord networks to wild minigames. My aesthetic mixes pastel softness with glitchy neon edges.</p>
+        <ul class="list">
+          <li>Codes Discord bots (Lua, discord.py, TypeScript)</li>
+          <li>Learning HTML · CSS · Python · JS · JSON</li>
+          <li>Owns a bounty service on a Roblox game</li>
+          <li>Training for the military (discipline meets chaos)</li>
+          <li>Favorite Disney princess & movie: <strong>Mulan</strong></li>
+          <li>Favorite song: <em>Colors of the Wind</em></li>
+          <li>Loves swords, guns, red pandas, sea lions, animals; humans are “ok”</li>
+        </ul>
+      </div>
+      <div class="about__col card">
+        <h3>Secret vibes</h3>
+        <p>Something here hums with energy. A tiny icon hides an arcade surprise. Can you find it?</p>
+        <div class="badges">
+          <span class="badge">chaotic good</span>
+          <span class="badge">glitch pastel</span>
+          <span class="badge">ai curious</span>
+        </div>
+        <div class="easter-egg" aria-label="Hidden game trigger" title="Maybe click me?">
+          <span class="egg-icon">✧</span>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT / DESCRIPTION CARD -->
-    <section class="card description-card">
-      <h2>⚡ Who is Veylein?</h2>
-      <p>I’m Veylein — a 17-year-old developer, chaos enthusiast, and digital artisan. I breathe life into bots, craft immersive Discord experiences, and tinker with AI to push the boundaries of what’s possible. My creativity isn’t just a hobby, it’s a lifestyle.</p>
-
-      <h2>🤖 What I Build</h2>
-      <p>From <strong>Ludus</strong> to <strong>Pax</strong> and <strong>Villicus</strong>, I design multi-bot networks that transform Discord into a playground of innovation. Each project blends AI, game mechanics, and community interaction into something that feels alive. 🌌</p>
-
-      <h2>💜 My Passions</h2>
-      <ul>
-        <li>Coding & AI experiments 🤝</li>
-        <li>Video games & minigames 🎮</li>
-        <li>Music & digital art 🎨🎧</li>
-        <li>Animals & nature 🐾</li>
-        <li>Autumn & winter aesthetics 🍂❄️</li>
-        <li>Chaos, confusion, and pushing limits 🥀</li>
-      </ul>
+    <section class="game-panel hidden" id="game-panel">
+      <div class="panel-header">
+        <h2>Secret Mini Shooter</h2>
+        <button id="close-game" class="icon-btn" aria-label="Close game">×</button>
+      </div>
+      <div class="game-meta">
+        <div>Score: <span id="score">0</span></div>
+        <div>High Score: <span id="high-score">0</span></div>
+        <div class="powerup" id="powerup-status">Power-up: none</div>
+      </div>
+      <canvas id="game-canvas" width="800" height="450"></canvas>
+      <p class="tiny">Move: WASD / Arrows · Shoot: Space · Pickups: “Mulan Sword” slash arc, “AI Laser” pierce beam.</p>
     </section>
 
-    <!-- PROJECTS CARD -->
-    <section class="card projects-card">
-      <h2>🏆 Projects & Highlights</h2>
-      <ul>
-        <li><strong>𝑳𝒖𝒅𝒖𝒔 🎮:</strong> 750+ features, 250 minigames, 25 simulation games.</li>
-        <li><strong>𝑷𝒂𝒙 🧌:</strong> Immersive RPG Discord bot with dueling, farming, and community events.</li>
-        <li><strong>𝙑𝙞𝙡𝙡𝙞𝙘𝙪𝙨 ⚖️:</strong> Context-aware moderation bot with analytics and automation.</li>
-        <li><strong>𝙋𝙨𝙮𝙫𝙧𝙨𝙚 🔨:</strong> My dev hub for all Discord innovations.</li>
-        <li><strong>Learning Latin 📜:</strong> Ancient wisdom meets modern tech.</li>
-        <li><strong>Neural Operations & Voice Assitant :</strong> My custom AI to help me around my day to day life.</li>
-      </ul>
+    <section class="cta">
+      <p>Deploy on GitHub Pages — the site is fully static. Remix colors, swap assets, tweak the game in <code>js/game.js</code>.</p>
+      <a class="btn" href="https://github.com/new/import" target="_blank" rel="noreferrer">Fork & Deploy</a>
     </section>
-
   </main>
 
+  <script src="js/main.js"></script>
+  <script src="js/game.js"></script>
 </body>
 </html>
