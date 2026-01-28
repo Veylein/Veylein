@@ -78,15 +78,15 @@
     if (!running) return;
 
     // Movement
-    const dx = (keys['ArrowRight'] || keys['d'] ? 1 : 0) - (keys['ArrowLeft'] || keys['a'] ? 1 : 0);
-    const dy = (keys['ArrowDown'] || keys['s'] ? 1 : 0) - (keys['ArrowUp'] || keys['w'] ? 1 : 0);
+    const dx = (keys['arrowright'] ? 1 : 0) - (keys['arrowleft'] ? 1 : 0);
+    const dy = (keys['arrowdown'] ? 1 : 0) - (keys['arrowup'] ? 1 : 0);
     const len = Math.hypot(dx, dy) || 1;
     player.x = Math.min(W - player.size, Math.max(player.size, player.x + (dx / len) * player.speed));
     player.y = Math.min(H - player.size, Math.max(player.size, player.y + (dy / len) * player.speed));
 
     // Shooting
     shootCooldown -= dt;
-    if (keys[' '] && shootCooldown <= 0) {
+    if (keys['x'] && shootCooldown <= 0) {
       shoot();
       shootCooldown = power === 'laser' ? 120 : 260;
     }
@@ -264,9 +264,9 @@
   window.stopShooter = () => { running = false; };
 
   window.addEventListener('keydown', (e) => {
-    keys[e.key] = true;
+    keys[e.key.toLowerCase()] = true;
   });
   window.addEventListener('keyup', (e) => {
-    keys[e.key] = false;
+    keys[e.key.toLowerCase()] = false;
   });
 })();
