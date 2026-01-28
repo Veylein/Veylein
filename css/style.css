@@ -184,6 +184,8 @@ main {
   transform: rotate(25deg);
   pointer-events: none;
 }
+.card .easter-egg,
+.card .easter-egg * { position: relative; z-index: 2; }
 .badges { display: flex; gap: 8px; flex-wrap: wrap; }
 .badge {
   border: 1px dashed var(--accent-2);
